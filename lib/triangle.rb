@@ -7,6 +7,9 @@ class Triangle
     @triangle_sides << side_3
   end 
   
+  def valid? 
+    sum_one_two = @triangle_sides[0] + @triangle_sides[1]
+  
   def kind 
     if valid? 
       if @triangle_sides.uniq.length == 1 
